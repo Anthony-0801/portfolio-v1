@@ -1,19 +1,16 @@
-import { Button } from "../ui/button"
-import { Header } from "./layout-specifics/header"
-import { ModeToggle } from "./mode-toggle"
+import { Route, Routes } from "react-router-dom";
+import { Footer } from "./layout-specifics/footer";
+import { Header } from "./layout-specifics/header";
+import { Home } from "@/features/home";
 
 export const GlobalLayout = () => {
   return (
-    <div className="w-fit h-fit p-4">
-        <Header />
-      <h1>Welcome to Vite + React</h1>
-      <p>
-        This is my starting point in order to regain my will in programming.
-      </p>
-      <Button>
-        Hello
-      </Button>
-      <ModeToggle />
+    <div className="w-full h-full">
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
     </div>
-  )
-}
+  );
+};

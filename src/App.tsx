@@ -1,13 +1,15 @@
-import { GlobalLayout } from './components/layouts/global-layout'
-import { ThemeProvider } from './components/layouts/theme-provider'
+import { BrowserRouter } from "react-router-dom";
+import { GlobalLayout } from "./components/layouts/global-layout";
+import { ThemeProvider } from "./components/layouts/theme-provider";
 
 function App() {
-
   return (
     <ThemeProvider>
-      <GlobalLayout />
+      <BrowserRouter>
+        <GlobalLayout />
+      </BrowserRouter>
     </ThemeProvider>
-  )
+  );
 }
 
-export default App
+export default App;
