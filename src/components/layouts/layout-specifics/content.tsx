@@ -1,17 +1,14 @@
-export function Content () {
+export function Content ({title, subtitle, contents} : {title: string, subtitle: string, contents: React.ReactNode}) {
   return (
-    <div className="container mx-auto p-8 pt-24">
-      <h1 className="mb-4 text-center text-3xl font-bold">
-        The title should go here
+    <div className="container px-40 pt-24">
+      <h1 className="mb-4 text-3xl font-bold">
+        {title}
       </h1>
       <p className="mb-10 text-center text-sm text-zinc-500">
-        For demo purpose we have kept the position as{" "}
-        <span className="font-medium">Sticky</span>. Keep in mind that this
-        component is <span className="font-medium">fixed</span> and will not
-        move when scrolling.
+        {subtitle}
       </p>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-        {[
+      <div className="flex items-center">
+        {/* {[
           {
             id: 1,
             title: "The",
@@ -89,7 +86,8 @@ export function Content () {
           >
             <h2 className="text-xl font-medium">{box.title}</h2>
           </div>
-        ))}
+        ))} */}
+        {contents}
       </div>
     </div>
   );
