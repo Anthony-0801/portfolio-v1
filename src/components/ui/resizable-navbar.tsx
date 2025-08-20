@@ -238,6 +238,7 @@ export const NavbarLogo = () => {
         alt="logo"
         width={30}
         height={30}
+        style={{ borderRadius: "5px" }}
       />
       <span className="font-medium text-black dark:text-white">
         Anthony A. Cabulang
