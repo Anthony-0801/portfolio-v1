@@ -29,7 +29,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="container mx-auto p-8 dark:hidden">
+      <div className="container mx-auto p-8 xl:px-33 dark:hidden">
         <div className="flex justify-around flex-wrap gap-3 border-t-2 p-3 border-neutral-400 text-neutral-600">
           <p>Home</p>
           <p>Journey</p>

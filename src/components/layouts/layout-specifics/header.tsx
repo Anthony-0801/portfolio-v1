@@ -34,7 +34,7 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="fixed w-full bg-white dark:bg-black">
+    <div className="fixed z-10 w-full bg-white dark:bg-black">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
