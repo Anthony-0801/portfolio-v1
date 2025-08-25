@@ -4,8 +4,8 @@ import { IconBrandInstagram, IconBrandLinkedin } from "@tabler/icons-react";
 export function Footer() {
   return (
     <>
-      <div className="hidden dark:block h-full w-full overflow-hidden bg-white dark:bg-zinc-900">
-        <div className="mx-auto mt-32 w-full max-w-2xl">
+      <div className="hidden dark:block h-full w-full overflow-hidden">
+        <div className="mx-auto mt-6 w-full max-w-2xl">
           <div className="text-center text-xl lg:text-3xl text-zinc-900 dark:text-white">
             <span className="text-indigo-600 dark:text-indigo-200">
               Created with 💙
@@ -29,7 +29,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="container mx-auto p-8 xl:px-33 dark:hidden">
+      <div className="container mx-auto mt-6 p-8 xl:px-8 xl:mt-24 dark:hidden">
         <div className="flex justify-around flex-wrap gap-3 border-t-2 p-3 border-neutral-400 text-neutral-600">
           <p>Home</p>
           <p>Journey</p>
