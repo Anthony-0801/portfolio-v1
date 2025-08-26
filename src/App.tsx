@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router";
 import { GlobalLayout } from "./components/layouts/global-layout";
 import { ThemeProvider } from "./components/layouts/theme-provider";
 

@@ -192,9 +192,9 @@ export function Home() {
 
                   <div className="hidden lg:flex flex-col justify-center gap-2 mt-4">
                     {[
-                      { label: "Web Development" },
-                      { label: "Data Analytics" },
-                      { label: "Database, Tools, and More!" },
+                      { label: "Web and Mobile Development 🌐" },
+                      { label: "Data Analytics 📊" },
+                      { label: "Database, Tools, and More! 🛠️" },
                     ].map((item, idx) => (
                       <Popover key={idx}>
                         <PopoverTrigger>
@@ -203,7 +203,7 @@ export function Home() {
                           </span>
                         </PopoverTrigger>
                         <PopoverContent>
-                          {item.label === "Web Development" && (
+                          {item.label === "Web and Mobile Development 🌐" && (
                             <div className="mt-2">
                               {webDevelopment.map((skill, idx) => (
                                 <span
@@ -215,7 +215,7 @@ export function Home() {
                               ))}
                             </div>
                           )}
-                          {item.label === "Data Analytics" && (
+                          {item.label === "Data Analytics 📊" && (
                             <div className="mt-2">
                               {dataAnalytics.map((skill, idx) => (
                                 <span
@@ -227,7 +227,7 @@ export function Home() {
                               ))}
                             </div>
                           )}
-                          {item.label === "Database, Tools, and More!" && (
+                          {item.label === "Database, Tools, and More! 🛠️" && (
                             <div className="mt-2">
                               {databaseToolsAndMore.map((skill, idx) => (
                                 <span
@@ -264,7 +264,7 @@ export function Home() {
                     ].map((item, idx) => (
                       <p
                         key={idx}
-                        className="leading-5 md:max-lg:p-3 md:max-lg:text-sm text-center dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-lg border-2 text-xs p-1 font-medium bg-gray-50"
+                        className="leading-5 md:max-lg:p-3 md:max-lg:text-sm text-center dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-lg border-2 font-medium bg-gray-50"
                       >
                         {item.label}
                       </p>

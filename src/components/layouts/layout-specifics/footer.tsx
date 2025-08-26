@@ -31,10 +31,10 @@ export function Footer() {
 
       <div className="container mx-auto mt-6 p-8 xl:px-8 xl:mt-24 dark:hidden">
         <div className="flex justify-around flex-wrap gap-3 border-t-2 p-3 border-neutral-400 text-neutral-600">
-          <p>Home</p>
-          <p>Journey</p>
-          <p>Surprise</p>
-          <p>Contact Me</p>
+          <a href="/">Home</a>
+          <a href="journey">Journey</a>
+          <a href="surprise">Surprise</a>
+          <a href="contact">Contact Me</a>
         </div>
 
         <span className="block text-center text-sm mt-10 text-neutral-500">
